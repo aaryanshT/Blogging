@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { emailIcon, passwordIcon, userIcon } from "../Icons/Icons";
+import { passwordIcon, userIcon } from '../Icons/Icon';
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -10,9 +10,11 @@ const Login = () => {
     e.preventDefault();
     axios
       .post("http://localhost:8000/login", { username, password })
-      .then((result) => console.log(result))
-      .catch((error) => console.log(error.message))
-      .finally(alert("User logged in Successfully!"));
+      .then((result) => {
+        console.log(result);
+        alert("User logged in Successfully!");
+      })
+      .catch((error) => console.log(error.message));
   };
 
   return (
@@ -35,7 +37,7 @@ const Login = () => {
           </div>
           <div className="mb-6">
             <label className="flex items-center gap-2 border-b border-gray-300 py-2">
-              {passwordIcon} {/* Use passwordIcon here */}
+              {passwordIcon}
               <input
                 type="password"
                 className="grow bg-transparent outline-none text-black custom-input"

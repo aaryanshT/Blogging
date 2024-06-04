@@ -14,9 +14,6 @@ const Navbar = () => {
             <a href="#" className="text-lg hover:text-blue-500">
               BLOGS
             </a>
-            <a href="#" className="text-lg hover:text-blue-500">
-              ABOUT
-            </a>
           </nav>
           <button className="btn  btn-accent">Register</button>
         </div>
