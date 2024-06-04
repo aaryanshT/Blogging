@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { emailIcon, passwordIcon, userIcon } from "../Icons/Icons"; // Import all the icons
+import { emailIcon, passwordIcon, userIcon } from "../Icons/Icons";
 
 const Login = () => {
   const [password, setPassword] = useState("");
